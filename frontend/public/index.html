@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Translation & TTS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Text Translation and Text-to-Speech</h1>
+
+        <!-- Translation Section -->
+        <div class="translation-section">
+            <label for="textInput">Enter Text:</label>
+            <textarea id="textInput" rows="5" placeholder="Enter text here..."></textarea>
+
+            <label for="targetLanguage">Select Language:</label>
+            <select id="targetLanguage">
+                <option value="te">Telugu</option>
+                <option value="hi">Hindi</option>
+                <option value="ta">Tamil</option>
+                <option value="kn">Kannada</option>
+                <option value="ml">Malayalam</option>
+                <option value="zh">Chinese</option>
+                <option value="en">English</option>
+            </select>
+
+            <button id="translateBtn">Translate</button>
+            <p id="translatedText"></p>
+        </div>
+
+        <!-- Text-to-Speech Section -->
+        <div class="tts-section">
+            <button id="audioBtn">Listen to Translated Text</button>
+            <audio id="audioPlayer" controls></audio>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
